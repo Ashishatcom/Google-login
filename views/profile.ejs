@@ -1,0 +1,20 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% formdatas.forEach(function(writerdata){ %>
+    <tr>
+      <th scope="row"><%= writerdata.id  %></th>
+      <td><%= writerdata.displayName%></td>
+      <td><%=  writerdata.emails%></td>
+    </tr>
+    <%  })  %>
+   
+  </tbody>
+</table>
